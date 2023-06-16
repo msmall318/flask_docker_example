@@ -31,9 +31,9 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: .
-        file: ./myapp/Dockerfile
+        file: ./app/Dockerfile
         push: true
-        tags: msmall318/myapp:latest
+        tags: msmall318/app:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
