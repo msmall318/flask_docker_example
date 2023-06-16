@@ -36,8 +36,8 @@ jobs:
       id: docker_build
       uses: docker/build-push-action@v2
       with:
-        context: ./napp
-        file: ./napp/Dockerfile
+        context: ./app
+        file: ./app/Dockerfile
         push: false
         tags: msmall318/app:latest
 
